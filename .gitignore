@@ -1,1 +1,4 @@
 fastq/
+.nextflow.log*
+.nextflow.log
+.nextflow/
