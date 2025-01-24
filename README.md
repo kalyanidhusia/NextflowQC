@@ -23,13 +23,6 @@ RNA-Seq data quality control is a critical step in ensuring the integrity and re
 2. Runs FastQC to generate detailed QC reports.
 3. Organizes output reports for easy review.
 
-## Dependencies
-
-The following tools and frameworks are required to run the workflow:
-
-- [Nextflow](https://www.nextflow.io/): Workflow orchestration.
-- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/): Quality control analysis of high-throughput sequencing data.
-
 ## Installation
 
 1. Clone the repository:
