@@ -80,5 +80,3 @@ Contributions are welcome! To contribute:
 3. Commit your changes and open a pull request.
 
 Please ensure your code follows the repository's coding standards and includes relevant documentation.
-
-# NextflowQC
