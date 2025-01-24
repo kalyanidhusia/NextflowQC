@@ -36,7 +36,7 @@ The following tools and frameworks are required to run the workflow:
 
    ```bash
    git clone https://github.com/yourusername/NextflowQC.git
-   cd fastqc-rna-seq
+   cd NextflowQC
    ```
 ## Usage
 
