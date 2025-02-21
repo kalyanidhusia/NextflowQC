@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	UHR_Rep2_ERCC.read2	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/UHR_Rep2_ERCC.read2_fastqc.zip
+FastQC	all_sections	HBR_Rep2_ERCC.read1	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/HBR_Rep2_ERCC.read1_fastqc.zip
+FastQC	all_sections	HBR_Rep3_ERCC.read1	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/HBR_Rep3_ERCC.read1_fastqc.zip
+FastQC	all_sections	HBR_Rep1_ERCC.read2	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/HBR_Rep1_ERCC.read2_fastqc.zip
+FastQC	all_sections	HBR_Rep2_ERCC.read2	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/HBR_Rep2_ERCC.read2_fastqc.zip
+FastQC	all_sections	HBR_Rep3_ERCC.read2	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/HBR_Rep3_ERCC.read2_fastqc.zip
+FastQC	all_sections	UHR_Rep3_ERCC.read2	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/UHR_Rep3_ERCC.read2_fastqc.zip
+FastQC	all_sections	UHR_Rep3_ERCC.read1	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/UHR_Rep3_ERCC.read1_fastqc.zip
+FastQC	all_sections	UHR_Rep2_ERCC.read1	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/UHR_Rep2_ERCC.read1_fastqc.zip
+FastQC	all_sections	UHR_Rep1_ERCC.read2	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/UHR_Rep1_ERCC.read2_fastqc.zip
+FastQC	all_sections	HBR_Rep1_ERCC.read1	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/HBR_Rep1_ERCC.read1_fastqc.zip
+FastQC	all_sections	UHR_Rep1_ERCC.read1	/Users/dhusiakalyani/flowQC/NextflowQC/work/f5/7e15bd5408c974bf11533abd7d8287/UHR_Rep1_ERCC.read1_fastqc.zip
