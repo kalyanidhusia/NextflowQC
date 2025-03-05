@@ -1,3 +1,5 @@
+#!/usr/bin/env nextflow
+
 params.ref = "/Users/dhusiakalyani/flowQC/NextflowQC/chr22_with_ERCC92.fa"
 params.index_dir = "/Users/dhusiakalyani/flowQC/NextflowQC/index_dir"
 
