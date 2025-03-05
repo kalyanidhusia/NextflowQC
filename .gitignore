@@ -3,3 +3,4 @@ pipeline2.nf
 .nextflow.log*
 .nextflow.log
 .nextflow/
+.DS_Store
