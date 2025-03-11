@@ -68,7 +68,9 @@ All output files are stored in the directory specified by the `--output` paramet
 ├── main.nf           # Main Nextflow workflow file
 ├── nextflow.config   # Configuration file for the workflow
 ├── README.md         # Documentation
-└── results/          # Output directory (generated after workflow execution)
+├── fastqc_report     # Output directory (generated after workflow execution)
+├── fastq             # contains all fa.gz files
+└── index_dir/        # Output directory for .ann .sa  .bwt .pac  .amb and .fai
 ```
 
 ## Contributing
