@@ -1,4 +1,6 @@
 work/
+fastq/
+fastqc_report/multiqc*
 pipeline2.nf
 .nextflow.log*
 .nextflow.log
