@@ -1,36 +1,40 @@
 #!/usr/bin/env nextflow
 
 // Parameters definition
-params.fastq = "/Users/dhusiakalyani/flowQC/NextflowQC/fastq/"
-//params.index_dir = "/Users/dhusiakalyani/flowQC/NextflowQC/index_dir/"
-params.ref_genome = "/Users/dhusiakalyani/flowQC/NextflowQC/index_dir/chr22_with_ERCC92.fa"
+params.index_dir = "/Users/dhusiakalyani/flowQC/NextflowQC/ref"
+params.ref ="chr22_with_ERCC92.fa"
+params.fastq = "/Users/dhusiakalyani/flowQC/NextflowQC/fastq/*_{read1,read2}*"
 
-// Channels definition
-ref_ch = Channel.value(params.ref_genome)
-//fastq_ch = Channel.fromFilePairs("${params.fastq}{*_{read1,read2}.fastq.gz}", size: 2, flat: true)
-fastq_ch = Channel.fromFilePairs("${params.fastq}*_read{1,2}.fastq.gz", size: 2, flat: true)
+params.bam = "/Users/dhusiakalyani/flowQC/NextflowQC/BAM"
 
 process mapping {
-    tag "Mapping ${sample_id}"
 
-    input:
-    path ref_genome
-    tuple val(sample_id), path(read1), path(read2)
+publishDir("${params.bam}", mode: 'copy')
 
-    output:
-    path "*.bam"
+input:
+    path index_dir
+    val ref
+    tuple val (sample_id), path(fastq)
 
-    script:
+output:
+    path "*"
+
+script:
     """
-    echo "Reference Genome: ${ref_genome}"
-    echo "Read 1: ${read1}"
-    echo "Read 2: ${read2}"
-    bwa mem ${ref_genome} ${read1} ${read2} | samtools view -bh -o ${sample_id}.bam -
+    echo "Reference Genome: ${ref}"
+    echo "Reads : ${fastq}"
+    bwa mem ${index_dir}/${ref} ${fastq} | samtools view -h -b -o ${sample_id}.bam -
     """
 }
 
 workflow {
-    // Execute the mapping process using the defined channels
-    mapping(ref_ch, fastq_ch)
-    mapping.out.view { it -> println("Generated BAM file: ${it}") }
+// Execute the mapping process using the defined channels
+index_ch = Channel.fromPath(params.index_dir)
+ref_ch = Channel.of(params.ref)
+
+//fastq_ch = Channel.fromFilePairs("${params.fastq}{*_{read1,read2}.fastq.gz}", size: 2, flat: true)
+fastq_ch = Channel.fromFilePairs(params.fastq)
+
+mapping(index_ch,ref_ch,fastq_ch)
+mapping.out.view()
 }
